@@ -1,0 +1,90 @@
+{
+  "name": "<%=name%>",
+  "version": "<%=version%>",
+  "description": "<%=description%>",
+  "scripts": {
+    "docs:dev": "npm run build:file && vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "build:file": "node scripts/gen-components.js && node scripts/build-entry.js ",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "commit": "git-cz",
+    "build": "npm run build:file && webpack --config scripts/webpack.component.js",
+    "generate": "iceworks generate",
+    "upload:minio": "node scripts/upload-minio.js",
+    "build:test": "webpack --config scripts/webpack.component.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://tfs2018-web.winning.com.cn:8080/tfs/WINNING-6.0/W.in-MVP/_git/winning-webblock-common"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-transform-runtime": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "@vue/babel-preset-jsx": "^1.2.4",
+    "async-validator": "^1.11.5",
+    "babel-loader": "^8.2.2",
+    "chalk": "^4.1.1",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "commitizen": "^4.2.3",
+    "conventional-changelog-cli": "^2.1.1",
+    "css-loader": "^5.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "element-ui": "^2.15.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^4.1.0",
+    "highlight.js": "^10.7.2",
+    "html-loader": "^2.1.2",
+    "husky": "^6.0.0",
+    "iceworks": "^3.4.3",
+    "json-loader": "^0.5.7",
+    "json-templater": "^1.2.0",
+    "lerna": "^4.0.0",
+    "mini-css-extract-plugin": "^1.6.0",
+    "node-sass": "^6.0.0",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "rimraf": "^3.0.2",
+    "sass-loader": "^10.1.1",
+    "style-loader": "^2.0.0",
+    "uppercamelcase": "^3.0.0",
+    "url-loader": "^4.1.1",
+    "vue": "^2.6.12",
+    "vue-loader": "^15.9.6",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "inquire": "^0.4.8",
+    "minio": "^7.0.18",
+    "npmlog": "^4.1.2",
+    "vue-clipboard2": "^0.3.1",
+    "vuepress": "^1.8.2"
+  },
+  "materialConfig": {
+    "key": "<%=domain%>",
+    "title": "<%=title%>",
+    "registry": "http://172.16.9.242:8081/repository/npm-group",
+    "unpkgHost": "http://172.16.6.51:9000/minio/winex"
+  }
+}
