@@ -1,6 +1,6 @@
 {
   "name": "@winfe/winex-material-vue-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "自定义物料源的初始模板",
   "files": [
     "template"
