@@ -1,24 +1,18 @@
-# demo
+# 物料模板
 
-## Project setup
-```
-yarn install
-```
+## 使用模板创建物料
 
-### Compiles and hot-reloads for development
 ```
-yarn serve
-```
+npm i xxx -g
+mkdir my-demo && cd my-demo
+xxx init
 
-### Compiles and minifies for production
-```
-yarn build
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
+## 模板列表
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### template-vue
+
+- 特点：Vue
+- npm 包名：@winfe/winex-material-vue-template
+- 场景：vue 生态

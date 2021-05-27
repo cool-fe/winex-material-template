@@ -1,7 +1,7 @@
 {
-  "name": "<%=name%>",
-  "version": "<%=version%>",
-  "description": "<%=description%>",
+  "name": "winex-material-template",
+  "version": "1.0.0",
+  "description": "卫宁前端物料模板库",
   "scripts": {
     "docs:dev": "npm run build:file && vuepress dev docs",
     "docs:build": "vuepress build docs",
@@ -80,11 +80,5 @@
     "npmlog": "^4.1.2",
     "vue-clipboard2": "^0.3.1",
     "vuepress": "^1.8.2"
-  },
-  "materialConfig": {
-    "key": "<%=domain%>",
-    "title": "<%=title%>",
-    "registry": "http://172.16.9.242:8081/repository/npm-group",
-    "unpkgHost": "http://172.16.6.51:9000/minio/winex"
   }
 }

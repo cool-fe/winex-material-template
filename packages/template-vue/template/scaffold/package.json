@@ -1,0 +1,11 @@
+{
+  "name": "@winexmaterial-scaffolds/<%= npmName =>",
+  "version": "<%= version =>",
+  "description": "<%= description =>",
+  "scaffoldConfig": {
+    "name": "@winexmaterial-scaffolds/<%= npmName =>",
+    "title": "<%= title =>",
+    "category": "<%= category =>",
+    "domain": "<%= common =>"
+  }
+}
