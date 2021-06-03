@@ -22,7 +22,7 @@ module.exports = {
         {
           title: "组件",
           collapsable: false,
-          children: ["demo-title", "demo-tag", "patient-card"]
+          children: ["demo"]
         }
       ]
     }
