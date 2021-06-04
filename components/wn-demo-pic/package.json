@@ -1,6 +1,6 @@
 {
   "name": "@winexmaterial-components/wn-demo-pic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "这是一个示例组件",
   "main": "./lib/index.js",
   "repository": "仓库地址",
