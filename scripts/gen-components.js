@@ -10,13 +10,12 @@ var filterPath = path.join(__dirname, "../components/*/lib/index.js");
 function writeComponentsConf() {
   const filterFiles = glob.sync(filterPath, { matchBase: true });
   const conf = new Map();
+  console.log(filterFiles, "filterFiles");
   filterFiles.forEach(packagePath => {
     const componentNames = path
       .dirname(packagePath)
       .split("components/")[1]
       .split("/");
-    console.log(componentNames, "componentNames");
-    // componentNames = componentNames[1].split("/");
     conf[componentNames[0]] = `./${path.relative(OUTPUT_PATH, packagePath)}`;
   });
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(conf, null, 2));

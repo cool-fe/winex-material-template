@@ -32,9 +32,10 @@ upload("winex", filepath, file);
 // upload minio oss
 function upload(bucket, filepath, file) {
   minioClient.fPutObject(bucket, filepath, file, metaData, function(err, etag) {
-    console.log(err, etag); // err should be null
     if (!err) {
       console.log(chalk.green("上传成功"));
+    } else {
+      console.log(err); // err should be null
     }
   });
 }

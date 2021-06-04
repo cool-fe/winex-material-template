@@ -1,7 +1,3 @@
 {
-  "wn-avatar": "./components/wn-avatar/lib/index.js",
-  "wn-demo-tag": "./components/wn-demo-tag/lib/index.js",
-  "wn-patient-card": "./components/wn-patient-card/lib/index.js",
-  "wn-tag": "./components/wn-tag/lib/index.js",
-  "wn-title": "./components/wn-title/lib/index.js"
+  "wn-demo": "./components/wn-demo/lib/index.js"
 }
