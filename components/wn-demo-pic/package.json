@@ -1,0 +1,22 @@
+{
+  "name": "@winexmaterial-components/wn-demo-pic",
+  "version": "1.0.0",
+  "description": "这是一个示例组件",
+  "main": "./lib/index.js",
+  "repository": "仓库地址",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "fire-scripts build"
+  },
+  "dependencies": {
+    "@winfe/fire-scripts": "^1.0.1"
+  },
+  "componentConfig": {
+    "name": "@winexmaterial-components/wn-demo-pic",
+    "title": "示例组件",
+    "category": "component",
+    "domain": "common"
+  }
+}
