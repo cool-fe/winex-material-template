@@ -1,6 +1,6 @@
 {
   "name": "@winexmaterial-components/wn-demo",
-  "version": "1.0.0",
+  "version": "1.1.0-beta.0",
   "description": "这是一个示例组件",
   "main": "./lib/index.js",
   "repository": "仓库地址",
@@ -8,7 +8,7 @@
     "lib"
   ],
   "scripts": {
-    "build": "fire-scripts build"
+    "version": "fire-scripts build"
   },
   "dependencies": {
     "@winfe/fire-scripts": "^1.0.1"

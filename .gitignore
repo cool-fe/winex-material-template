@@ -2,12 +2,8 @@
 node_modules
 /dist
 /lib
-package-lock.json
 
 
-# local env files
-.env.local
-.env.*.local
 
 # Log files
 npm-debug.log*
@@ -16,8 +12,6 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Editor directories and files
-.idea
-.vscode
 *.suo
 *.ntvs*
 *.njsproj

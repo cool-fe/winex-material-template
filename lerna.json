@@ -1,0 +1,28 @@
+{
+  "version": "independent",
+  "packages": ["scaffolds/*", "components/*"],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "bootstrap": {
+      "noCi":true,
+      "ignorePrepublish": true,
+      "ignoreScripts":true,
+      "registry":"http://172.16.9.242:8081/repository/npm-local/",
+      "npmClient":"yarn"
+    },
+    "publish": {
+      "ignoreChanges": ["*.md", ".npmrc"],
+      "registry": "http://172.16.9.242:8081/repository/npm-local/",
+      "version": ["--conventional-prerelease", "--preid", "beta"],
+      "message": "chore(release): publish %s [skip ci]"
+    },
+    "version": {
+      "conventionalCommits": true,
+      "includeMergedTags": true,
+      "ignoreChanges": ["*.md", ".npmrc"]
+    }
+  },
+  "npmClientArgs": ["--no-optional"],
+  "ignoreChanges": ["**/*.md", "**/*.test.ts", "**/test/**", "**/*.npmrc"]
+}
