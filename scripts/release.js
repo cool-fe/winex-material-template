@@ -20,7 +20,7 @@ const { command } = require(path.resolve(process.cwd(), './lerna.json'));
 const argvs = [
   'publish',
   '--legacy-auth',
-  process.env.NEXUS_TOKEN || NEXUS_TOKEN,
+  NEXUS_TOKEN,
   '--registry',
   'http://172.16.9.242:8081/repository/npm-local/',
 ];
