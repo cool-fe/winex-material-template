@@ -11,7 +11,7 @@
     "version": "fire-scripts build"
   },
   "dependencies": {
-    "@winfe/fire-scripts": "^1.0.4"
+    "@winfe/fire-scripts": "^1.0.7"
   },
   "componentConfig": {
     "name": "@winexmaterial-components/wn-demo",

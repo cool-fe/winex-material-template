@@ -6,9 +6,9 @@
     "scaffolds/*",
     "components/*"
   ],
-  "private":true,
+  "private": true,
   "scripts": {
-    "bootstrap":"lerna clean -y && lerna bootstrap",
+    "bootstrap": "lerna clean -y && lerna bootstrap",
     "docs:dev": "npm run build:file && vuepress dev docs",
     "docs:build": "vuepress build docs",
     "build:file": "node scripts/gen-components.js && node scripts/build-entry.js ",
@@ -25,10 +25,10 @@
     "chalk": "^4.1.1",
     "iceworks": "^3.4.3",
     "lerna": "^4.0.0",
-    "json-templater":"^1.2.0",
-    "uppercamelcase":"^3.0.0",
-    "glob":"^7.1.7",
-    "cross-spawn":"^7.0.3",
+    "json-templater": "^1.2.0",
+    "uppercamelcase": "^3.0.0",
+    "glob": "^7.1.7",
+    "cross-spawn": "^7.0.3",
     "minio": "^7.0.18"
   },
   "dependencies": {
