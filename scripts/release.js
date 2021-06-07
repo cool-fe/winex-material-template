@@ -5,8 +5,8 @@ const spawn = require('cross-spawn');
 const error = chalk.bold.red;
 const info = chalk.bold.green;
 
-// admin/devops@2019
-const NEXUS_TOKEN = 'admin:ZGV2b3BzQDIwMTk=';
+// admin:devops@2019
+const NEXUS_TOKEN = 'YWRtaW46ZGV2b3BzQDIwMTk=';
 
 info('start...');
 
