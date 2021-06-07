@@ -8,7 +8,6 @@
       "noCi":true,
       "ignorePrepublish": true,
       "ignoreScripts":true,
-      "registry":"http://172.16.9.242:8081/repository/npm-local/",
       "npmClient":"yarn"
     },
     "publish": {
