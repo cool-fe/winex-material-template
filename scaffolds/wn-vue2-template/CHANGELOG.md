@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0-beta.24](http://仓库地址/compare/@winexmaterial-scaffolds/wn-vue2-template@1.1.0-beta.23...@winexmaterial-scaffolds/wn-vue2-template@1.1.0-beta.24) (2021-06-08)
+
+
+### Bug Fixes
+
+* test  release ([cdef38c](http://仓库地址/commits/cdef38caddefd37af5dca5e1f8ed04ab91a6f94f))
+
+
+
+
+
 # [1.1.0-beta.23](http://仓库地址/compare/@winexmaterial-scaffolds/wn-vue2-template@1.1.0-beta.21...@winexmaterial-scaffolds/wn-vue2-template@1.1.0-beta.23) (2021-06-08)
 
 
