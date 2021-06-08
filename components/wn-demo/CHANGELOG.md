@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0-beta.3](http://仓库地址/compare/@winexmaterial-components/wn-demo@1.1.0-beta.2...@winexmaterial-components/wn-demo@1.1.0-beta.3) (2021-06-08)
+
+
+### Bug Fixes
+
+* test  release ([8b0c100](http://仓库地址/commits/8b0c10035dbaff9d7e2a9178d5e284b14daed1e5))
+
+
+
+
+
 # 1.1.0-beta.2 (2021-06-08)
 
 
