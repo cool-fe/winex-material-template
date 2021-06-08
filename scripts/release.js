@@ -20,6 +20,7 @@ const { command } = require(path.resolve(process.cwd(), './lerna.json'));
 
 
 spawn.sync('npm',['config','set',`//172.16.9.242:8081/repository/npm-local/:_authToken=${NEXUS_TOKEN}`])
+spawn.sync('npm',['config','set',`//172.16.9.242:8081/repository/npm-local/:_auth=${NEXUS_TOKEN}`])
 
 const argvs = [
   'publish',
