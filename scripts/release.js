@@ -17,6 +17,9 @@ const { name: packageName } = require(path.resolve(
 
 const { command } = require(path.resolve(process.cwd(), './lerna.json'));
 
+
+
+spawn.sync('npm',['config','set',`//172.16.9.242:8081/repository/npm-local/:_authToken=`])
 spawn.sync('npm',['config','set',`//172.16.9.242:8081/repository/npm-local/:_auth=${NEXUS_TOKEN}`])
 
 const argvs = [
