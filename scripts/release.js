@@ -7,6 +7,7 @@ const info = chalk.bold.green;
 
 // admin:devops@2019
 const NEXUS_TOKEN = 'YWRtaW46ZGV2b3BzQDIwMTk=';
+const NEXUS_REGISTRY = '//172.16.9.242:8081/repository/npm-local/'
 
 info('start...');
 
@@ -19,15 +20,15 @@ const { command } = require(path.resolve(process.cwd(), './lerna.json'));
 
 // token权限比auth高，为了防止token覆盖auth，每次都重置下配置
 // 我也没办法，lerna留的坑，lerna应该没有兼容最新版npm-registry-fetch
-spawn.sync('npm',['config','set',`//172.16.9.242:8081/repository/npm-local/:_authToken=`])
-spawn.sync('npm',['config','set',`//172.16.9.242:8081/repository/npm-local/:_auth=${NEXUS_TOKEN}`])
+spawn.sync('npm',['config','set',`${NEXUS_REGISTRY}:_authToken=`])
+spawn.sync('npm',['config','set',`${NEXUS_REGISTRY}:_auth=${NEXUS_TOKEN}`])
 
 const argvs = [
   'publish',
   '--legacy-auth',
   NEXUS_TOKEN,
   '--registry',
-  'http://172.16.9.242:8081/repository/npm-local/',
+  `http:${NEXUS_REGISTRY}`,
 ];
 
 process.env.npm_config_ci && process.env.npm_config_ci.length &&  argvs.push('--yes')
