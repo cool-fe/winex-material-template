@@ -726,7 +726,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.12.13"
 
-"@babel/plugin-transform-runtime@^7.11.0":
+"@babel/plugin-transform-runtime@^7.11.0", "@babel/plugin-transform-runtime@^7.13.15":
   version "7.14.3"
   resolved "https://registry.npmjs.org/@babel/plugin-transform-runtime/-/plugin-transform-runtime-7.14.3.tgz#1fd885a2d0de1d3c223795a4e9be72c2db4515cf"
   integrity sha512-t960xbi8wpTFE623ef7sd+UpEC5T6EEguQlTBJDEO05+XwnIWVfuqLw/vdLWY6IdFmtZE+65CZAfByT39zRpkg==
@@ -798,7 +798,7 @@
     "@babel/helper-create-regexp-features-plugin" "^7.12.13"
     "@babel/helper-plugin-utils" "^7.12.13"
 
-"@babel/preset-env@^7.11.0":
+"@babel/preset-env@^7.11.0", "@babel/preset-env@^7.13.15":
   version "7.14.4"
   resolved "https://registry.npmjs.org/@babel/preset-env/-/preset-env-7.14.4.tgz#73fc3228c59727e5e974319156f304f0d6685a2d"
   integrity sha512-GwMMsuAnDtULyOtuxHhzzuSRxFeP0aR/LNzrHRzP8y6AgDNgqnrfCCBm/1cRdTU75tRs28Eh76poHLcg9VF0LA==
@@ -2764,12 +2764,15 @@
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
 
-"@winfe/fire-scripts@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.npmjs.org/@winfe/fire-scripts/-/fire-scripts-1.0.4.tgz#1736f54483ca406597124ce1ffbb0e29f215c9e2"
-  integrity sha512-ePGxx+0kyY7FbBqPeNPnJjbabLEc0U3te1ODg8grePK9A4kwVzPOu+Dp/9GA6kGVLkf5Gy+qdH16z4+dRYcnHQ==
+"@winfe/fire-scripts@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@winfe/fire-scripts/-/fire-scripts-1.0.7.tgz#7095f593dade31b9d654099533409e8dfd0df24d"
+  integrity sha512-5KbahQMCAQMx5NSywBjhOE4TST8EIY7PVTvtlDppeaksfHW7gFY1smfEh2LyozRV4H8nLHLO5oPovmZvnbcAkg==
   dependencies:
     "@babel/core" "^7.13.16"
+    "@babel/plugin-proposal-class-properties" "^7.13.0"
+    "@babel/plugin-transform-runtime" "^7.13.15"
+    "@babel/preset-env" "^7.13.15"
     babel-loader "^8.2.2"
     chalk "^4.1.1"
     clean-webpack-plugin "^4.0.0-alpha.0"
