@@ -5,23 +5,37 @@
   "useWorkspaces": true,
   "command": {
     "bootstrap": {
-      "noCi":true,
+      "noCi": true,
       "ignorePrepublish": true,
-      "ignoreScripts":true,
-      "npmClient":"yarn"
+      "ignoreScripts": true,
+      "npmClient": "yarn",
+      "npmClientArgs": ["--no-optional"]
     },
     "publish": {
-      "ignoreChanges": ["*.md", ".npmrc"],
       "registry": "http://172.16.9.242:8081/repository/npm-local/",
       "version": ["--conventional-prerelease", "--preid", "beta"],
-      "message": "chore(release): publish %s [skip ci]"
+      "message": "chore(release): publish %s [skip ci]",
+      "ignoreChanges": [
+        "**/*.md",
+        "**/*.test.ts",
+        "**/test/**",
+        "**/*.npmrc",
+        "**/scripts/**"
+      ]
     },
     "version": {
       "conventionalCommits": true,
       "includeMergedTags": true,
-      "ignoreChanges": ["*.md", ".npmrc"]
+      "commitHooks": false,
+      "forceGitTag": true,
+      "message": "chore(release): publish %s [skip ci]",
+      "ignoreChanges": [
+        "**/*.md",
+        "**/*.test.ts",
+        "**/test/**",
+        "**/*.npmrc",
+        "**/scripts/**"
+      ]
     }
-  },
-  "npmClientArgs": ["--no-optional"],
-  "ignoreChanges": ["**/*.md", "**/*.test.ts", "**/test/**", "**/*.npmrc"]
+  }
 }
