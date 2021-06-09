@@ -9,9 +9,6 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna clean -y && lerna bootstrap",
-    "docs:dev": "npm run build:file && vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "build:file": "node scripts/gen-components.js && node scripts/build-entry.js ",
     "generate": "iceworks generate",
     "upload:minio": "node scripts/upload-minio.js",
     "postpublish": "iceworks generate && node scripts/upload-minio.js",
@@ -19,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://tfs2018-web.winning.com.cn:8080/tfs/WINNING-6.0/W.in-MVP/_git/winning-webblock-common"
+    "url": ""
   },
   "devDependencies": {
     "chalk": "^4.1.1",
@@ -30,9 +27,6 @@
     "glob": "^7.1.7",
     "cross-spawn": "^7.0.3",
     "minio": "^7.0.18"
-  },
-  "dependencies": {
-    "vuepress": "^1.8.2"
   },
   "materialConfig": {
     "key": "common",

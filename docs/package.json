@@ -1,0 +1,24 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "async-validator": "^1.11.5",
+    "core-js": "^3.14.0",
+    "highlight.js": "^11.0.1",
+    "node-sass": "^6.0.0",
+    "sass-loader": "^5.0.1",
+    "vue-clipboard2": "^0.3.1"
+  },
+  "dependencies": {
+    "vuepress": "^1.8.2"
+  }
+}
